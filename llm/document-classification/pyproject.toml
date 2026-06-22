@@ -1,0 +1,11 @@
+[project]
+name = "document-classification"
+version = "0.1.0"
+description = "Classify and sort PDFs into topic folders using a local Qwen GGUF model via llama.cpp"
+requires-python = ">=3.12"
+dependencies = [
+    "pypdf>=6.13.3",
+]
+
+[project.scripts]
+classify-pdf = "classify_pdf:main"
